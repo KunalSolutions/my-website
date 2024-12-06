@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Streaming Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+        <div class="background">
+            <div class="overlay">
+                <header>
+                    <h1 class="logo">Netflix</h1>
+                    <button class="sign-in">Sign In</button>
+                </header>
+                <div class="content">
+                    <h1>Unlimited movies, TV shows and more</h1>
+                    <h2>Starts at ₹149. Cancel at any time.</h2>
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="email-box">
+                        <input type="email" placeholder="Email address">
+                        <button>Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containers">
+            <!-- Trending Section -->
+            <section class="trending">
+                <h1>Trending Now</h1>
+                <div class="filters">
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                    </select>
+                    <select>
+                        <option>Movies</option>
+                        <option>TV Shows</option>
+                    </select>
+                </div>
+                <div class="trending-grid">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/c3/04/f6/c304f69ad905ac19cc8d3aa516ad74ff.jpg" alt="Sikandar ka Muqaddar">
+
+                        <div class="info">
+                            <span class="rank">1</span>
+                            <h2>Shaandaar</h2>
+                            <p>Recently added</p>
+                        </div>
+                    </div>
+                   
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/89/01/d5/8901d5d470907314eca5a42714333662.jpg" alt="Sikandar ka Muqaddar">
+
+                        <div class="info">
+                            <span class="rank">2</span>
+                            <h2>Drishyam</h2>
+                            <p>Recently added</p>
+                        </div>
+                    </div>   
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/18/47/66/184766217a7b18904c52b800f144bc69.jpg" alt="Sikandar ka Muqaddar">
+                        <div class="info">
+                            <span class="rank">4</span>
+                            <h2>Yeh Jawani Hai Diwani</h2>
+                            <p>Recently added</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/9b/8c/4e/9b8c4e3d1138cf4e7a6b3f1d77a98210.jpg" alt="Sikandar ka Muqaddar">
+                        <div class="info">
+                            <span class="rank">3</span>
+                            <h2>Ramaya Vastavaya</h2>
+                            <p>Recently added</p>
+                        </div>
+                    </div> 
+                    <!-- Add more movie cards as needed -->
+                </div>
+            </section>
+    
+            <!-- More Reasons Section -->
+            <section class="reasons">
+                <h1>More reasons to join</h1>
+                <div class="reason-grid">
+                    <div class="reason">
+                        <h2>Enjoy on your TV</h2>
+                        <p>Watch on smart TVs, PlayStation, and more.</p>
+                        <img src="data:image/jpeg;base64,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" alt="" width="20%">
+                    </div>
+                    <div class="reason">
+                        <h2>Download your shows</h2>
+                        <p>Save your favourites and watch offline.</p>
+                        <img src="https://cdn-icons-png.freepik.com/256/7721/7721607.png?semt=ais_hybrid" alt="" width="18%">
+
+                    </div>
+                    <div class="reason">
+                        <h2>Watch everywhere</h2>
+                        <p>Stream on your phone, tablet, or laptop.</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/543/543268.png" alt="" width="18%">
+                    </div>
+                    <div class="reason">
+                        <h2>Create profiles for kids</h2>
+                        <p>Send kids on adventures with their favourite characters.</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/1761/1761430.png" alt="" width="18%">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq">
+              <div class="faq-item">
+                <button class="faq-question">What is Netflix?</button>
+                <div class="faq-answer">
+                  <p>
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                    documentaries, and more – on thousands of internet-connected devices. You can watch as much as you want,
+                    whenever you want, without a single ad – all for one low monthly price.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">How much does Netflix cost?</button>
+                <div class="faq-answer">
+                  <p>The cost of Netflix depends on your region and the plan you choose.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Where can I watch?</button>
+                <div class="faq-answer">
+                  <p>You can watch on any internet-connected device, including TVs, smartphones, and tablets.</p>
+                </div>
+              </div>
+              <!-- Add more FAQ items as needed -->
+            </div>
+            <div class="container">
+                <button class="red-button">Get Started</button>
+                <!-- <h4 class="h4">Create or restart your membership</h4> -->
+            </div>
+          </section>
+     <script src="script.js"></script>
+
+
+          <div class="footer">
+            <!-- <h2>Questions? Call 000-800-919-1743</h2> -->
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+                <a href="#">Help Centre</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+           
+        </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 MyStreamingSite - All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
